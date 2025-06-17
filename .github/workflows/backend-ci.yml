@@ -3,8 +3,12 @@ name: backend ci
 on:
   push:
     branches: [main]
+    paths:
+      - "olymna-backend/**"
   pull_request:
     branches: [main]
+    paths:
+      - "olymna-backend/**"
 
 jobs:
   lint:
