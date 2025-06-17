@@ -1,4 +1,4 @@
-name: Backend CI
+name: backend ci
 
 on:
   push:
@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: olympna-backend
+        working-directory: olymna-backend
 
     steps:
       - uses: actions/checkout@v3
