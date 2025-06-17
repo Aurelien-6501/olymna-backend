@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coachings",
+  "info": {
+    "singularName": "coaching",
+    "pluralName": "coachings",
+    "displayName": "Coaching"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titre": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "date_heure": {
+      "type": "datetime"
+    },
+    "duree": {
+      "type": "integer"
+    },
+    "salle": {
+      "type": "enumeration",
+      "enum": [
+        "Grande",
+        "Petite"
+      ]
+    },
+    "nb_places": {
+      "type": "integer"
+    },
+    "coach": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::coach.coach",
+      "mappedBy": "coaching"
+    },
+    "reservations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reservation.reservation"
+    }
+  }
+}
