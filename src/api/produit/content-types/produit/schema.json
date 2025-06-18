@@ -23,7 +23,7 @@
     "stock": {
       "type": "integer"
     },
-    "image": {
+    "photo": {
       "type": "media",
       "multiple": true,
       "allowedTypes": [
