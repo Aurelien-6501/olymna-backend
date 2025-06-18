@@ -29,8 +29,9 @@
     },
     "coaching": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::coaching.coaching"
+      "relation": "manyToOne",
+      "target": "api::coaching.coaching",
+      "inversedBy": "reservations"
     }
   }
 }

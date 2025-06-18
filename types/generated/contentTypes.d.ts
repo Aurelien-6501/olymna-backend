@@ -524,7 +524,7 @@ export interface ApiReservationReservation extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    coaching: Schema.Attribute.Relation<'oneToOne', 'api::coaching.coaching'>;
+    coaching: Schema.Attribute.Relation<'manyToOne', 'api::coaching.coaching'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

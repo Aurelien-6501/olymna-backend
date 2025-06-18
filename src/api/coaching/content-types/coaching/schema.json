@@ -42,7 +42,8 @@
     "reservations": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::reservation.reservation"
+      "target": "api::reservation.reservation",
+      "mappedBy": "coaching"
     }
   }
 }
