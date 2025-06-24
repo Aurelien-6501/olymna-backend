@@ -46,7 +46,7 @@ export default factories.createCoreController(
         return ctx.notFound("Reservation not found");
       }
 
-      if (reservation.user.id !== user.id) {
+      if (!reservation.user || reservation.user.id !== user.id) {
         return ctx.forbidden("You are not allowed to delete this reservation");
       }
 

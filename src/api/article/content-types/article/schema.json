@@ -17,7 +17,7 @@
     "contenu": {
       "type": "richtext"
     },
-    "image": {
+    "photo": {
       "type": "media",
       "multiple": true,
       "allowedTypes": [
