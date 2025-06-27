@@ -44,6 +44,15 @@
       "relation": "oneToMany",
       "target": "api::reservation.reservation",
       "mappedBy": "coaching"
+    },
+    "categorieCours": {
+      "type": "enumeration",
+      "enum": [
+        "Collectif",
+        "Small Group",
+        "Duo",
+        "Coaching privé"
+      ]
     }
   }
 }

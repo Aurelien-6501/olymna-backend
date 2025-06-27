@@ -448,6 +448,9 @@ export interface ApiCoachingCoaching extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    categorieCours: Schema.Attribute.Enumeration<
+      ['Collectif', 'Small Group', 'Duo', 'Coaching priv\u00E9']
+    >;
     coach: Schema.Attribute.Relation<'oneToOne', 'api::coach.coach'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
